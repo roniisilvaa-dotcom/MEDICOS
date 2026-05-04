@@ -1,0 +1,7 @@
+version: 1
+services:
+- type: web
+  name: medicos
+  env: node
+  buildCommand: bash -lc 'cd "APP MEDICOS" && pnpm install'
+  startCommand: bash -lc 'cd "APP MEDICOS" && pnpm run dev'
